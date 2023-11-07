@@ -1,0 +1,182 @@
+.psproductcountdown .hidden {
+    display: none;
+}
+
+#product .psproductcountdown {
+    padding: 0;
+}
+#product .product-prices .psproductcountdown {
+    text-align: left;
+}
+
+#products .pspc-main .time,
+.pspc-main .time {
+    font-weight: normal;
+    margin: 0 20px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    height: 5.8em;
+    width: 13%;
+    max-width: 6em;
+    -webkit-perspective: 479px;
+    -moz-perspective: 479px;
+    -ms-perspective: 479px;
+    -o-perspective: 479px;
+    perspective: 479px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.pspc-main .time::after {
+    content: ':';
+    position: absolute;
+    top: 10px;
+    bottom: auto;
+    right: -25px;
+    left: auto;
+    display: inline-block;
+    color: #c4c4c4;
+    font-size: 30px;
+    line-height: normal;
+}
+.pspc-main .time.seconds::after{
+    content: none;
+}
+#products .pspc-main .flip .count.curr.top,
+.pspc-main .flip .count.curr.top {
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+#products .pspc-main .count.curr.top,
+.pspc-main .count.curr.top {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    z-index: 3;
+}
+#products .pspc-main .count.top,
+.pspc-main .count.top {
+    height: 50%;
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+	background: #e6e6e6;
+}
+#products .pspc-main .count, .pspc-main .count {
+    font-weight: 600;
+    color: #000;
+    display: block;
+    font-size: 20px;
+    line-height: 2.2em;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform-style: flat;
+    -moz-transform-style: flat;
+    -ms-transform-style: flat;
+    -o-transform-style: flat;
+    transform-style: flat;
+    letter-spacing: 0.6px;
+}
+#products .pspc-main .flip .count.next.bottom,
+.pspc-main .flip .count.next.bottom {
+    -webkit-transition: all 250ms ease-in-out 250ms;
+    -moz-transition: all 250ms ease-in-out 250ms;
+    -ms-transition: all 250ms ease-in-out 250ms;
+    -o-transition: all 250ms ease-in-out 250ms;
+    transition: all 250ms ease-in-out 250ms;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+#products .pspc-main .count.next.bottom,
+.pspc-main .count.next.bottom {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    z-index: 2;
+}
+#products .pspc-main .count.bottom,
+.pspc-main .count.bottom {
+    line-height: 0;
+    height: 30%;
+    top: 50%;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+	background: #e6e6e6;
+}
+
+.pspc-main .label {
+    color: #000;
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 0;
+    padding: 0;
+    position: absolute;
+    text-transform: uppercase;
+    top: 4.8em;
+    width: 100%;
+}
+@media (max-width:1199px) {
+	
+}
+@media (max-width:991px) {
+	#products .pspc-main .count.bottom, .pspc-main .count.bottom{
+        top: 43%;
+    }
+    #products .pspc-main .count, .pspc-main .count{
+        font-size: 28px;
+    }
+}
+@media (max-width: 479px) { 
+	#products .pspc-main .count.bottom, .pspc-main .count.bottom {
+        top: 30%;
+    }
+    #products .pspc-main .count, .pspc-main .count {
+        font-size: 18px;
+    }
+    #products .pspc-main .time, .pspc-main .time{
+        margin: 0 15px;
+    }
+}

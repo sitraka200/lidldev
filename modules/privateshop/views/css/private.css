@@ -1,0 +1,262 @@
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+html {
+    padding: 30px 10px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #737373;
+    background: #f0f0f0;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    background: transparent;
+    height: auto;
+}
+
+body, html { height: auto  !important;}
+
+html,
+input {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#privatebox
+{
+    border: medium none;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    /*overflow: auto;*/
+    padding: 10px;
+    /*width: 45%;*/
+}
+#wrapper.private_wrapper{
+    height: 65%;
+    margin-left: 1%;
+    overflow: auto;
+    width: 44%;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
+}
+#wrapper{
+    width: 40%;
+    margin-top: 15% !important;
+    margin-bottom: 5% !important;
+    background: #f1f1f1 none repeat scroll 0 0!important;
+}
+
+h1 {
+    margin: 0 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+h1 span {
+    color: #bbb;
+}
+h2 {
+    color: #D35780;
+    margin: 0 10px;
+    font-size: 40px;
+    text-align: left;
+}
+
+h2 span {
+    color: #bbb;
+    font-size: 60px;
+}
+
+h3 {
+    margin: 1.5em 0 0.5em;
+}
+
+p {
+    margin: 1em 0;
+}
+
+ul {
+    padding: 0 0 0 40px;
+    margin: 1em 0;
+}
+
+.container {
+    padding: 10px;
+    _width: 380px;
+    margin: 0 auto;
+}
+
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+#privatebox .private_login{
+    /*border-top: 1px solid #e1e1e1;*/
+    padding: 10px;
+}
+.radio-inline, .checkbox {
+    padding-left: 5%!important;
+}
+#privatebox .private-subheading {
+    border-bottom: 1px solid #d6d4d4;
+    color: #D35780;
+    font-family: "Open Sans",sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 12px;
+    padding: 0 0 15px;
+    text-transform: uppercase;
+}
+
+/*~~~~~~~~~~ PS 1.7 Styles ~~~~~~~~~~*/
+#fmm_ps17 h1 { font-weight: normal}
+
+#fmm_ps17 #ps17_errors { background: #F3515C; color: #fff; padding: 1%; margin-bottom: 10px}
+
+#fmm_ps17 #ps17_errors ol { list-style: none; font-size: 12px; font-weight: bold; margin: 0}
+/*
+#fmm_ps17 label {color: #333; font-weight: bold; font-size: 12px}
+
+#fmm_ps17 #login_form { background: #fbfbfb; border: 1px solid #d6d4d4; padding: 14px 18px 13px}
+
+#fmm_ps17 .form-control {box-shadow: none; height: 27px; padding: 3px 5px;border: 1px solid #d6d4d4; border-radius: 0;
+color: #9c9b9b; font-size: 13px; vertical-align: middle}*/
+
+/*--------- END PS 1.7 -----------*/
+
+
+@media only screen and (max-width: 360px) {
+#privatebox .container{
+    padding-left: 0;
+    padding-right: 0;
+}
+#privatebox .container p img{
+    width: 80%;
+}
+#privatebox .container h1{
+    margin-bottom: -10px;
+    margin-top: 0;
+    font-size: 25px;
+}
+#privatebox #noSlide .page-heading{
+    font-size: 15px;
+}
+#private-lost-password h1.page-subheading{
+    font-size: 16px;
+}
+#privatebox .private-subheading{
+    border-bottom: 1px solid #d6d4d4;
+    color: #d35780;
+    font-family: "Open Sans",sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 5px;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+
+}
+#register span{
+    font-size: 12px;
+    text-align: center;
+}
+#SubmitLogin span, #SubmitCreate span, #privatebox #noSlide #account-creation_form .page-subheading{
+    font-size: 12px;
+}
+#SubmitLogin span i, #SubmitCreate span i,.exttra_row{
+    display: none;
+}
+td span.label-default{
+    background-color: #999999;
+    margin-top: -15px;
+}
+.private_error_resp{
+    margin-bottom: 5px!important;
+    margin-top: -17px!important;
+}
+#login_form {
+    min-height: 240px;
+}
+#create-account_form {
+    min-height: 275px;
+}
+.private_signup_table
+{
+    margin-top: -40px;
+}
+}
+#logo_basic { text-align: center}
+ul#pshop_bottom_footer { margin: 0px;}
+ul#pshop_bottom_footer li, ul#pshop_bottom_footer li div { display: inline-block;}
+table.private_login_table { width: 100%}
+/*------- New Modern Theme Styles --------*/
+body.private_modern_theme #wrapper { padding-top: 0px !important; border-radius: 2px;}
+body.private_modern_theme .container { padding: 15px !important; border-radius: 2px;}
+body.private_modern_theme #logo_basic { padding: 15px 0 !important; text-align: center; background: rgba(239,239,239,0.4);
+margin: -15px -15px 0 !important; display: block}
+body.private_modern_theme #logo_basic img { max-width: 100%;}
+body.private_modern_theme h2.private-subheading { margin-left: 0px !important; margin-right: 0px !important; padding-top: 5px !important;
+font-weight: bold !important; color: #414141 !important; font-size: 19px !important;}
+body.private_modern_theme .private_login_table { width: 100%}
+body.private_modern_theme .private_login_table tr.pshop_fields_row td:first-child { display: none}
+body.private_modern_theme input.form-control { width: 100% !important; max-width: 100% !important;
+ padding: 3%; font-style: italic; font-weight: normal; margin: 3px 0 !important; border: 3px solid #EFEFEF !important;}
+body.private_modern_theme .alert.alert-danger {background: rgba(243,81,92,0.7) !important; border: 0px !important; border-radius: 4px;}
+body.private_modern_theme .alert.alert-danger ol { padding-left: 3px !important;}
+body.private_modern_theme .alert.alert-danger {background: rgba(243,81,92,0.7) !important; border: 0px !important; border-radius: 4px;}
+body.private_modern_theme .pshop_title_shop { display: none; visibility: hidden}
+body.private_modern_theme ul#pshop_bottom_footer { padding: 5px 0 0;}
+body.private_modern_theme ul#pshop_bottom_footer li.submit { float: right}
+body.private_modern_theme ul#pshop_bottom_footer .lost_password {font-size: 13px !important; font-style: italic; margin: 8px 0 !important;}
+body.private_modern_theme ul#pshop_bottom_footer .lost_password a { text-decoration: none;background: rgba(239,239,239,0.4); padding: 1px 4px;
+border-radius: 4px}
+body.private_modern_theme ul#pshop_bottom_footer .lost_password a:hover { color: #d35780; background: rgba(239,239,239,0.8);}
+body.private_modern_theme .btn { border-radius: 3px; background: #00aff0 !important; text-transform: uppercase;
+border: 0px !important; color: #fff !important; box-shadow: 0 1px #009bd3 inset, 1px 0 #009bd3 inset, -1px 0 #009bd3 inset, 0 -1px #009bd3 inset, 0 2px #009bd3, 0 3px #009bd3, 0 4px 2px rgba(0, 0, 0, 0);
+font-weight: 700}
+body.private_modern_theme .btn:hover { background: #009bd3 !important;}
+body.private_modern_theme form#form_forgotpassword label { display: none}
+body.private_modern_theme form#customer-form .form-control-label,
+body.private_modern_theme form#customer-form .form-control-comment { display: none}
+body.private_modern_theme form#customer-form .social_title label { display: inline !important;}
+body.private_modern_theme form#customer-form .row { margin-left: 0px !important; margin-right: 0px !important;}
+body.private_modern_theme form#customer-form .col-md-6 { width: 100% !important; padding: 0px !important;}
+body.private_modern_theme form#customer-form .pshop_show_hide button { padding: 1.1rem 1rem !important;}
+body.private_modern_theme form#customer-form .social_title .col-md-6 { width: 75% !important; padding-top: 0.625rem !important;}
+/*---------------------------------------*/
+/*---------PS-1.6 and below Fixes----------*/
+.privateshop_ps_lower .box { background: transparent !important;}
+body.private_modern_theme .privateshop_ps_lower .box { padding: 0px !important; border: 0px !important;}
+body.private_modern_theme .privateshop_ps_lower .pshop_fields_row_hide { display: none}
+body.private_modern_theme .privateshop_ps_lower input.form-control { height: auto !important; color:#7a7a7a !important;
+border-radius: 2px !important; font-size: 14px !important;}
+body.private_modern_theme .privateshop_ps_lower input.form-control:focus {outline: 4px solid #2fb5d2;}
+body.private_modern_theme .privateshop_ps_lower .btn span { border: 0px !important;}
+body.private_modern_theme .privateshop_ps_lower .alert.alert-danger ol { margin-bottom: 0px !important;}
+body.private_modern_theme .privateshop_ps_lower .alert.alert-danger ol li { list-style: none !important;}
+body.private_modern_theme .privateshop_ps_lower .form-error input.form-control,
+body.private_modern_theme .privateshop_ps_lower .form-ok input.form-control { background-position: right center !important;}
+/*body.private_modern_theme .privateshop_ps_lower .account_creation .form-group label { display: none}*/
+/*------------------------*/
+@media (min-width: 500px) and (max-width: 768px) {
+#wrapper{ width: 75% !important;}
+}
+@media (min-width: 200px) and (max-width: 499px) {
+#wrapper{ width: 90% !important;}
+body.private_modern_theme form#customer-form .social_title label.form-control-label { display: none !important;}
+body.private_modern_theme .privateshop_ps_lower .btn,
+body.private_modern_theme .privateshop_ps_lower .btn span { font-size: 13px !important;}
+body.private_modern_theme .privateshop_ps_lower #new-private-account .pull-right { clear: both; float: left !important; margin-top: 5%}
+}
+@media (min-width: 200px) and (max-width: 400px) {
+body.private_modern_theme form#customer-form .pshop_show_hide button { padding-top:0.7rem !important; padding-bottom:0.7rem !important;}
+body.private_modern_theme form#customer-form .social_title .form-control-valign { width:100% !important;}
+#private-lost-password h1 { margin-bottom:10px !important;}
+}

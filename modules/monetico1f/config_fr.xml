@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>monetico1f</name>
+    <displayName><![CDATA[CB Monetico Payement x1]]></displayName>
+    <version><![CDATA[1.7.0]]></version>
+    <description><![CDATA[Paiement s&eacute;curis&eacute; pour les banques du syst&egrave;me Monetico&lt;br&gt;&lt;a href=&quot;http://hosteco.fr/host/module_paiement_prestashop.php&quot; target=&quot;_blank&quot; title=&quot;Cliquez ici pour aller sur le site de l&#039;Editeur&quot;&gt;&lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt;&nbsp;En savoir plus&lt;/a&gt;
+    &nbsp;&lt;span title=&quot;&quot; data-original-title=&quot;&quot; class=&quot;module-badge-popular help-tooltip text-primary&quot; data-title=&quot;Ce module est disponible sur hosteco.fr&quot;&gt;&lt;i class=&quot;icon-group&quot;&gt;&lt;/i&gt; &lt;small&gt;Populaires&lt;/small&gt;&lt;/span&gt;
+		- &lt;span title=&quot;&quot; data-original-title=&quot;&quot; class=&quot;module-badge-partner help-tooltip text-warning&quot; data-title=&quot;Module Professionnel, r&eacute;alis&eacute; par un sp&eacute;cialiste des syst&egrave;mes de paiement !&quot;&gt;&lt;i class=&quot;icon-pushpin&quot;&gt;&lt;/i&gt; &lt;small&gt;Professionnel&lt;/small&gt;]]></description>
+    <author><![CDATA[Hosteco.fr]]></author>
+    <tab><![CDATA[payments_gateways]]></tab>
+	<confirmUninstall><![CDATA[Etes vous sur de vouloir désinstaller ce module]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

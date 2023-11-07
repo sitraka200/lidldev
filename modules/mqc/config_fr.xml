@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>mqc</name>
+    <displayName><![CDATA[Quantit&eacute; maximale de produit par client]]></displayName>
+    <version><![CDATA[1.8.0]]></version>
+    <description><![CDATA[Avec ce module, vous pouvez d&eacute;finir la quantit&eacute; maximale de produit par groupe de clients. Les clients ne seront pas en mesure de commander plus de produits.]]></description>
+    <author><![CDATA[MyPresta.eu]]></author>
+    <tab><![CDATA[checkout]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

@@ -1,0 +1,38 @@
+array (
+  0 => 
+  array (
+    'product_quantity' => '1',
+    'product_id' => '20',
+  ),
+  1 => 
+  array (
+    'product_quantity' => '1',
+    'product_id' => '20',
+  ),
+  2 => 
+  array (
+    'product_quantity' => '3',
+    'product_id' => '26',
+  ),
+  3 => 
+  array (
+    'product_quantity' => '1',
+    'product_id' => '21',
+  ),
+  4 => 
+  array (
+    'product_quantity' => '1',
+    'product_id' => '111',
+  ),
+  5 => 
+  array (
+    'product_quantity' => '1',
+    'product_id' => '111',
+  ),
+  6 => 
+  array (
+    'product_quantity' => '5',
+    'product_id' => '111',
+  ),
+)114array (
+)'5'

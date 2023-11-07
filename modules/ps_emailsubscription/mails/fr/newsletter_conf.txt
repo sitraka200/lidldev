@@ -1,0 +1,8 @@
+{shop_url}
+
+Bonjour,
+
+Merci de vous être inscrit à notre newsletter.
+
+[{shop_name}]({shop_url})
+
