@@ -121,9 +121,10 @@ class statsproduct200 extends ModuleGraph
 
 	private function getSales($id_product)
 	{
-		$sql = 'SELECT o.date_add, o.id_order, o.id_customer, od.product_quantity, (od.product_price * od.product_quantity) as total, od.tax_name, od.product_name
+		$sql = 'SELECT o.date_add, o.id_order, o.id_customer, c.firstname, c.lastname , od.product_quantity, (od.product_price * od.product_quantity) as total, od.tax_name, od.product_name
 				FROM `'._DB_PREFIX_.'orders` o
 				LEFT JOIN `'._DB_PREFIX_.'order_detail` od ON o.id_order = od.id_order
+				LEFT JOIN `'._DB_PREFIX_.'customer` c ON o.id_customer = c.id_customer
 				WHERE o.date_add BETWEEN '.$this->getDate().'
 					'.Shop::addSqlRestriction(Shop::SHARE_ORDER, 'o').'
 					AND o.valid = 1
@@ -235,6 +236,7 @@ class statsproduct200 extends ModuleGraph
             }
             if ($total_bought) {
                 $sales = $this->getSales($id_product);
+                dump($sales);
                 $this->html .= '
 				<h4>'.$this->trans('Sales', array(), 'Admin.Global').'</h4>
 				<div style="overflow-y:scroll;height:'.min(400, (count($sales) + 1) * 32).'px">
@@ -249,6 +251,12 @@ class statsproduct200 extends ModuleGraph
 								</th>
 								<th>
 									<span class="title_box  active">'.$this->trans('Customer', array(), 'Admin.Global').'</span>
+								</th>
+								<th>
+									<span class="title_box  active">'.$this->trans('Fisrtname', array(), 'Admin.Global').'</span>
+								</th>
+								<th>
+									<span class="title_box  active">'.$this->trans('lastname', array(), 'Admin.Global').'</span>
 								</th>
 								'.($has_attribute ? '<th><span class="title_box  active">'.$this->trans('Attribute', array(), 'Admin.Global').'</span></th>' : '').'
 								<th>
@@ -268,6 +276,8 @@ class statsproduct200 extends ModuleGraph
 							<td>'.Tools::displayDate($sale['date_add'], null, false).'</td>
 							<td class="text-center"><a href="?tab=AdminOrders&id_order='.$sale['id_order'].'&vieworder&token='.$token_order.'">'.(int)$sale['id_order'].'</a></td>
 							<td class="text-center"><a href="?tab=AdminCustomers&id_customer='.$sale['id_customer'].'&viewcustomer&token='.$token_customer.'">'.(int)$sale['id_customer'].'</a></td>
+							<td class="text-center">'.$sale['firstname'].'</td>
+							<td class="text-center">'.$sale['lastname'].'</td>
 							'.($has_attribute ? '<td>'.$sale['product_name'].'</td>' : '').'
 							<td>'.(int)$sale['product_quantity'].'</td>
 							<td>'.Tools::displayprice($sale['total'], $currency).'</td>
