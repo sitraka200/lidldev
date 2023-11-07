@@ -28,7 +28,7 @@ if (!defined('_PS_VERSION_')) {
     exit;
 }
 
-class statsproduct extends ModuleGraph
+class statsproduct200 extends ModuleGraph
 {
     private $html = '';
     private $query = '';
@@ -37,15 +37,15 @@ class statsproduct extends ModuleGraph
 
     public function __construct()
     {
-        $this->name = 'statsproduct';
+        $this->name = 'statsproduct200';
         $this->tab = 'analytics_stats';
-        $this->version = '2.9.9';
-        $this->author = 'PrestaShop';
+        $this->version = '2.0.4';
+        $this->author = 'Avinconcept';
         $this->need_instance = 0;
 
         parent::__construct();
 
-        $this->displayName = $this->trans('Product details', array(), 'Modules.Statsproduct.Admin');
+        $this->displayName = $this->trans('Detail produit200', array(), 'Modules.Statsproduct.Admin');
         $this->description = $this->trans('Adds detailed statistics for each product to the Stats dashboard.', array(), 'Modules.Statsproduct.Admin');
         $this->ps_versions_compliancy = array('min' => '1.7.1.0', 'max' => _PS_VERSION_);
     }
