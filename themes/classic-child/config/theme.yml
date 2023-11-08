@@ -1,0 +1,16 @@
+parent: classic
+name: classic-child
+display_name: Thème Classique Enfant
+version: 1.0.0
+assets:
+  use_parent_assets: true
+  # css:
+  #   all:
+  #     - id: classic-child-style
+  #     path: assets/css/custom.css
+  #     media: all
+  #     priority: 1000
+  # js:
+  #   all:
+  #     - id: classic-child-script
+  #     path: assets/js/custom.js

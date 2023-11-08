@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="helloadmin" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="dd1f775e443ff3b9a89270713580a51b">
+        <source>Previous</source>
+        <target>Précédent</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="10ac3d04253ef7e1ddc73e6091c0cd55">
+        <source>Next</source>
+        <target>Suivant</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="62840e75dabf86e20957db513b0058d0">
+        <source>Showing %blogShowingStart% - %blogShowing% of %nb_items% items</source>
+        <target>Affiche %blogShowingStart% - %blogShowing% sur %nb_items% articles</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b7cc749fbb3fe5602c70015f67ca4991">
+        <source>Showing %blogShowingStart% - %blogShowing% of 1 item</source>
+        <target>Affiche %blogShowingStart% - %blogShowing% d'un article</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8ebb3e0f09899fb8aac0a325ada5b7ce">
+        <source>Like This</source>
+        <target>Aimez cet article</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,4 @@
+[{shop_url}] 
+
+Un nouveau compte est enregistré et en attente de validation.
+

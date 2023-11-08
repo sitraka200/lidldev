@@ -1,0 +1,10 @@
+[{shop_url}] 
+
+Bonjour {name},
+
+Merci de créer un compte sur le site {shop_name}. 
+
+Votre compte est en attente de validation et sera bientôt activé.
+
+{shop_name} [{shop_url}] 
+

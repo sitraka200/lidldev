@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="helloadmin" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="801ab24683a4a8c433c6eb40c48bcd9d">
+        <source>Download</source>
+        <target>Télécharger</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3c19bc4e7b90b3bc329f81f00764b791">
+        <source>proceed to checkout</source>
+        <target>passer à la caisse</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

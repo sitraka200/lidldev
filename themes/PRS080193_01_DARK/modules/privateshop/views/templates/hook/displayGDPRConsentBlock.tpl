@@ -1,0 +1,1 @@
+{hook h='displayGDPRConsent' mod='psgdpr' id_module=$id_module}

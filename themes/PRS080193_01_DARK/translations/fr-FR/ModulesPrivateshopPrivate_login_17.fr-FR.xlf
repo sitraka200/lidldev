@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="helloadmin" source-language="fr-FR" target-language="fr-FR" datatype="plaintext">
+    <body>
+      <trans-unit id="ebcbb71aee304fd93e59bcec33fe99f4">
+        <source>Private Login</source>
+        <target>Connexion Privée</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5e74f2daf4ae8030571ceee5b4837579">
+        <source>Social title</source>
+        <target>Titre social</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="127469a6b4253ebb77adccc0dd48461e">
+        <source>Mr.</source>
+        <target>Monsieur</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="20db0bfeecd8fe60533206a2b5e9891a">
+        <source>First name</source>
+        <target>Prénom</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8d3f5eff9c40ee315d452392bed5309b">
+        <source>Last name</source>
+        <target>Nom</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="dc647eb65e6711e155375218212b3964">
+        <source>Password</source>
+        <target>Mot de passe</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="62a5e490880a92eef74f167d9dc6dca0">
+        <source>Hide</source>
+        <target>Cacher</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="498f79c4c5bbde77f1bceb6c86fd0f6d">
+        <source>Show</source>
+        <target>Afficher</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="aac772216aecbeca0e86d06671fe985a">
+        <source>Birthday</source>
+        <target>Date de naissance</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ebb061953c0454b2c8ee7b0ac615ebcd">
+        <source>Optional</source>
+        <target>Optionnel</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="a9e3d6296e9b194ee466230d8438935a">
+        <source>Receive offers from our partners</source>
+        <target>Recevoir les offres de nos partenaires</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6f6162d3a052bb330e9c60285c74c6c9">
+        <source>Sign up for our newsletter</source>
+        <target>Inscrivez-vous à notre newsletter</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c9cc8cce247e49bae79f15173ce97354">
+        <source>Save</source>
+        <target>S'inscrire</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="54fc27e749c6998fb54cebc1a0879692">
+        <source>Log in instead!</source>
+        <target>Connectez-vous à la place</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b357b524e740bc85b9790a0712d84a30">
+        <source>Email address</source>
+        <target>Adresse e-mail</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="57478054ae00730105f1bfe535b2225e">
+        <source>Recover your forgotten password</source>
+        <target>Récupérer votre mot de passe oublié</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="01a569ddc6cf67ddec2a683f0a5f5956">
+        <source>Forgot your password?</source>
+        <target>Mot de passe oublié?</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b6d4223e60986fa4c9af77ee5f7149c5">
+        <source>Sign in</source>
+        <target>Se connecter</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bffe9a3c9a7e00ba00a11749e022d911">
+        <source>Log in</source>
+        <target>S'identifier</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="773442a125403cbb194c24c5a8d59b88">
+        <source>Mrs.</source>
+        <target>Madame</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1d76d48b0923bde85168932babac17be">
+        <source>Matricule number</source>
+        <target>Numéro matricule</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="dd7bf230fde8d4836917806aff6a6b27">
+        <source>Address</source>
+        <target>Adresse</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e4eb5dadb6ee84c5c55a8edf53f6e554">
+        <source>Zip/Postal Code</source>
+        <target>Code postal</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="57d056ed0984166336b7879c2af3657f">
+        <source>City</source>
+        <target>Ville</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1f8261d17452a959e013666c5df45e07">
+        <source>Phone number</source>
+        <target>Téléphone</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
