@@ -9,10 +9,10 @@
 #search_widget form {
   position: relative;
 }
-#search_widget form i {
+/*#search_widget form i {
   position: absolute;
   padding: .5rem;
-}
+}*/
 #search_widget form i.clear {
   right: 15px;
   display: none;
