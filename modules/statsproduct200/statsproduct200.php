@@ -52,7 +52,7 @@ class statsproduct200 extends ModuleGraph
 
     public function install()
     {
-        return (parent::install() && $this->registerHook('AdminStatsModules'));
+        return (parent::install() && $this->registerHook('displayAdminStatsModule'));
     }
 
     public function getTotalBought($id_product)
@@ -164,11 +164,21 @@ class statsproduct200 extends ModuleGraph
 
         if (Tools::getValue('export')) {
             if (!Tools::getValue('exportType')) {
-                $this->csvExport(array(
-                    'layers' => 2,
-                    'type' => 'line',
-                    'option' => '42'
-                ));
+            	if (Tools::getValue('export') == 'detail') {
+            		$this->csvExport(array(
+	                    'layers' => 2,
+	                    'type' => 'line',
+	                    'option' => 'detail',
+	                    'idproduct' => (int)Tools::getValue('id_product')
+	                ));
+            	} else {
+            		//export liste product
+	                $this->csvExport(array(
+	                    'layers' => 2,
+	                    'type' => 'line',
+	                    'option' => '42'
+	                ));	
+            	}
             }
         }
 
@@ -236,7 +246,6 @@ class statsproduct200 extends ModuleGraph
             }
             if ($total_bought) {
                 $sales = $this->getSales($id_product);
-                dump($sales);
                 $this->html .= '
 				<h4>'.$this->trans('Sales', array(), 'Admin.Global').'</h4>
 				<div style="overflow-y:scroll;height:'.min(400, (count($sales) + 1) * 32).'px">
@@ -258,7 +267,7 @@ class statsproduct200 extends ModuleGraph
 								<th>
 									<span class="title_box  active">'.$this->trans('lastname', array(), 'Admin.Global').'</span>
 								</th>
-								'.($has_attribute ? '<th><span class="title_box  active">'.$this->trans('Attribute', array(), 'Admin.Global').'</span></th>' : '').'
+								<th><span class="title_box  active">'.$this->trans('Attribute', array(), 'Admin.Global').'</span></th>
 								<th>
 									<span class="title_box  active">'.$this->trans('Quantity', array(), 'Admin.Global').'</span>
 								</th>
@@ -278,7 +287,7 @@ class statsproduct200 extends ModuleGraph
 							<td class="text-center"><a href="?tab=AdminCustomers&id_customer='.$sale['id_customer'].'&viewcustomer&token='.$token_customer.'">'.(int)$sale['id_customer'].'</a></td>
 							<td class="text-center">'.$sale['firstname'].'</td>
 							<td class="text-center">'.$sale['lastname'].'</td>
-							'.($has_attribute ? '<td>'.$sale['product_name'].'</td>' : '').'
+							<td>'.$sale['product_name'].'</td>
 							<td>'.(int)$sale['product_quantity'].'</td>
 							<td>'.Tools::displayprice($sale['total'], $currency).'</td>
 						</tr>';
@@ -286,7 +295,10 @@ class statsproduct200 extends ModuleGraph
                 $this->html .= '
 						</tbody>
 					</table>
-				</div>';
+				</div>
+				<a class="btn btn-default export-csv" href="'.Tools::safeOutput($_SERVER['REQUEST_URI'].'&export=detail').'">
+					<i class="icon-cloud-upload"></i> '.$this->trans('CSV Export', array(), 'Modules.Statsproduct.Admin').'
+				</a>';
 
                 $cross_selling = $this->getCrossSales($id_product, $this->context->language->id);
                 if (count($cross_selling)) {
@@ -435,18 +447,44 @@ class statsproduct200 extends ModuleGraph
                 $this->_titles['main'][1] = $this->trans('Reference', array(), 'Admin.Global');
                 $this->_titles['main'][2] = $this->trans('Name', array(), 'Admin.Global');
                 $this->_titles['main'][3] = $this->trans('Stock', array(), 'Modules.Statsproduct.Admin');
+                $this->_titles['main'][4] = $this->trans('test', array(), 'Modules.Statsproduct.Admin');
+                break;
+
+            case 'detail':
+                $this->_titles['main'][1] = $this->trans('Date', array(), 'Admin.Global');
+                $this->_titles['main'][2] = $this->trans('Order', array(), 'Admin.Global');
+                $this->_titles['main'][3] = $this->trans('Customer', array(), 'Admin.Global');
+                $this->_titles['main'][4] = $this->trans('Firstname', array(), 'Admin.Global');
+                $this->_titles['main'][5] = $this->trans('lastname', array(), 'Admin.Global');
+                $this->_titles['main'][6] = $this->trans('Quantity', array(), 'Admin.Global');
+                $this->_titles['main'][7] = $this->trans('Price', array(), 'Admin.Global');
+                $this->_titles['main'][8] = $this->trans('Attribut', array(), 'Admin.Global');
                 break;
         }
     }
 
     protected function getData($layers)
     {
-        if ($this->option == 42) {
+    	if ($this->option == 'detail') {
+            $products = $this->getSales((int)Tools::getValue('id_product'));
+           
+            foreach ($products as $product) {
+                $this->_values[0][] = $product['date_add'];
+                $this->_values[1][] = $product['id_order'];
+                $this->_values[2][] = $product['id_customer'];
+                $this->_values[3][] = $product['firstname'];
+                $this->_values[4][] = $product['lastname'];
+                $this->_values[5][] = $product['product_quantity'];
+                $this->_values[6][] = $product['total'];
+                $this->_values[7][] = $product['product_name'];
+                $this->_legend[] = $this->id_product;
+            }
+        } elseif ($this->option == 42) {
             $products = $this->getProducts($this->context->language->id);
             foreach ($products as $product) {
                 $this->_values[0][] = $product['reference'];
                 $this->_values[1][] = $product['name'];
-                $this->_values[2][] = $product['quantity'];
+                $this->_values[2][] = $product['id_customer'];
                 $this->_legend[] = $product['id_product'];
             }
         } elseif ($this->option != 3) {
